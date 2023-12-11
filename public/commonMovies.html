@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMZ2EKMD5D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FMZ2EKMD5D');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public/favicon.png">
+    <title>Common Movies</title>
+    <style>
+        /* Your existing CSS styles here */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-right: 50%;
+        }
+
+        li {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        #export-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #movies-count {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        #mean-similarity {
+            text-align: center;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        /* Media query for screens with a maximum width of 768px (typical mobile devices) */
+        @media only screen and (max-width: 768px) {
+            ul {
+                margin-right: 0; /* Remove the right margin on smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Common Movies</h1>
+
+    <button id="export-btn">Export as XLSX</button>
+    <div id="movies-count">0 common movies found</div>
+    <div id="mean-similarity"></div>
+    <div id="movies-container"></div>
+
+    <script>
+        let currentPage = 1; // Track the current page
+        const itemsPerPage = 10; // Adjust as needed
+        let isLoading = false;
+
+        function fetchMovies() {
+            // Fetch data from commonMovies.json for the current page
+            fetch(`/commonMovies.json?page=${currentPage}&itemsPerPage=${itemsPerPage}`)
+                .then(response => response.json())
+                .then(data => {
+                    const commonMovies = data.commonMovies;
+
+                    if (commonMovies && commonMovies.length > 0) {
+                        const moviesContainer = document.getElementById('movies-container');
+                        const ul = document.createElement('ul');
+
+                        commonMovies.forEach(movie => {
+                            const li = document.createElement('li');
+                            const ratings = Object.entries(movie.ratings).map(([username, rating]) => `${username}: ${rating}`).join(', ');
+                            li.textContent = `${movie.title} - Ratings: ${ratings}, Similarity: ${movie.similarityPercentage}%`;
+                            ul.appendChild(li);
+                        });
+
+                        moviesContainer.appendChild(ul);
+                        currentPage++; // Increment the current page
+                        isLoading = false;
+
+                        // Update movies count
+                        const moviesCount = document.getElementById('movies-count');
+                        moviesCount.textContent = `${commonMovies.length} common movies found`;
+
+                        // Display mean similarity percentage
+                        const meanSimilarityDiv = document.getElementById('mean-similarity');
+                        meanSimilarityDiv.textContent = `Taste Similarity: ${data.meanSimilarityPercentage.toFixed(2)}%`;
+                    } else {
+                        // Display a message if there are no more items
+                        const moviesContainer = document.getElementById('movies-container');
+                        const message = document.createElement('p');
+                        message.textContent = 'No more movies to load.';
+                        moviesContainer.appendChild(message);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    isLoading = false;
+                });
+        }
+
+        function handleScroll() {
+            if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200 && !isLoading) {
+                isLoading = true;
+                fetchMovies();
+            }
+        }
+
+        // Initial load
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchMovies();
+
+            // Attach scroll event listener
+            window.addEventListener('scroll', handleScroll);
+        });
+
+        document.getElementById('export-btn').addEventListener('click', () => {
+            exportToXLS();
+        });
+
+        function exportToXLS() {
+            // Fetch data from commonMovies.json for the export
+            fetch('/commonMovies.json')
+                .then(response => response.json())
+                .then(data => {
+                    const commonMovies = data.commonMovies;
+
+                    if (commonMovies && commonMovies.length > 0) {
+                        // Create an array of objects with proper structure for XLSX conversion
+                        const xlsData = commonMovies.map(movie => {
+                            const xlsObj = {
+                                title: movie.title,
+                            };
+                            Object.entries(movie.ratings).forEach(([username, rating]) => {
+                                xlsObj[`${username}_rating`] = rating;
+                            });
+                            return xlsObj;
+                        });
+
+                        // Create a worksheet
+                        const ws = XLSX.utils.json_to_sheet(xlsData);
+
+                        // Create a workbook
+                        const wb = XLSX.utils.book_new();
+                        XLSX.utils.book_append_sheet(wb, ws, "CommonMovies");
+
+                        // Save the workbook as an XLS file
+                        XLSX.writeFile(wb, 'CommonMovies.xlsx');
+                    } else {
+                        console.log('No common movies found.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                });
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+</body>
+
+</html>
