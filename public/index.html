@@ -3,21 +3,20 @@
 
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FMZ2EKMD5D"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FMZ2EKMD5D"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-FMZ2EKMD5D');
-</script>
+        gtag('config', 'G-FMZ2EKMD5D');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Match Letter</title>
     <link rel="icon" href="reicon.ico" type="image/x-icon" />
 
     <style>
-
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
@@ -76,23 +75,44 @@
         button:hover {
             background-color: #1e9aff;
         }
+
+        #loading-text {
+            text-align: center;
+            margin-top: 10px;
+            display: none;
+            color: #333;
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <h1>Matchd Letterbox</h1>
-        <h3>Find movies you've rated together with your friends</h3>
+        <h1>Match Letterbox</h1>
+        <h3>Find movies you've rated with your friends <br> and find out your taste similarities </h3>
     </div>
-    <form action="/scrape" method="post">
+    <form id="form" action="/scrape" method="post">
         <label for="username1">Letterboxd Username 1:</label>
         <input type="text" name="usernames[]" id="username1" required>
 
         <label for="username2">Letterboxd Username 2:</label>
         <input type="text" name="usernames[]" id="username2" required>
 
-        <button type="submit">Go</button>
+        <button id="submit-btn" type="submit">Go</button>
+        <div id="loading-text">This might take a while. Please wait while pulling movies from the database...</div>
     </form>
+
+    <script>
+        const form = document.getElementById('form');
+        const loadingText = document.getElementById('loading-text');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            loadingText.style.display = 'block';
+            setTimeout(() => {
+                form.submit();
+            }, 2000); // Simulating a delay of 2 seconds before submitting the form
+        });
+    </script>
 </body>
 
 </html>
