@@ -1,0 +1,1625 @@
+{
+  "meanSimilarityPercentage": 84.81481481481481,
+  "commonMovies": [
+    {
+      "letterboxdId": 835774,
+      "title": "Saltburn",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 521323,
+      "title": "The Menu",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 7
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 385511,
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "ratings": {
+        "nanobiolog": 5,
+        "zeynepaydinalp": 7
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 474474,
+      "title": "Everything Everywhere All at Once",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 348914,
+      "title": "The Batman",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 5
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 551275,
+      "title": "The Matrix Resurrections",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 560787,
+      "title": "Spider-Man: No Way Home",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 70
+    },
+    {
+      "letterboxdId": 371378,
+      "title": "Dune",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 427807,
+      "title": "Black Widow",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 5
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 475370,
+      "title": "Knives Out",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 406775,
+      "title": "Joker",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 426406,
+      "title": "Parasite",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 9
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 226660,
+      "title": "Avengers: Endgame",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 382669,
+      "title": "Glass",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 251943,
+      "title": "Spider-Man: Into the Spider-Verse",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 226661,
+      "title": "Avengers: Infinity War",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 107670,
+      "title": "Justice League",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 4
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 268950,
+      "title": "Baby Driver",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 198992,
+      "title": "Passengers",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 5
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 182910,
+      "title": "Fantastic Beasts and Where to Find Them",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 2
+      },
+      "similarityPercentage": 50
+    },
+    {
+      "letterboxdId": 194402,
+      "title": "Captain America: Civil War",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 7
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 220575,
+      "title": "Deadpool",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 248773,
+      "title": "Steve Jobs",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 104174,
+      "title": "Jurassic World",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 4
+      },
+      "similarityPercentage": 70
+    },
+    {
+      "letterboxdId": 235480,
+      "title": "Me and Earl and the Dying Girl",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 117621,
+      "title": "Interstellar",
+      "ratings": {
+        "nanobiolog": 10,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 149857,
+      "title": "Gone Girl",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 146954,
+      "title": "The Imitation Game",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 171384,
+      "title": "Whiplash",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 82488,
+      "title": "The Hunger Games: Catching Fire",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 7
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 16529,
+      "title": "Gravity",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 2
+      },
+      "similarityPercentage": 40
+    },
+    {
+      "letterboxdId": 96557,
+      "title": "About Time",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 7
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 52516,
+      "title": "Django Unchained",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 71338,
+      "title": "The Perks of Being a Wallflower",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 69151,
+      "title": "Silver Linings Playbook",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 68152,
+      "title": "My Grandfather's People",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 15051,
+      "title": "Crazy, Stupid, Love.",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 6945,
+      "title": "Midnight in Paris",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 9196,
+      "title": "Love Likes Coincidences",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 25859,
+      "title": "Tangled",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 26711,
+      "title": "The Social Network",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 34722,
+      "title": "Inception",
+      "ratings": {
+        "nanobiolog": 10,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 44748,
+      "title": "Alice in Wonderland",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 45409,
+      "title": "Shutter Island",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 46344,
+      "title": "Fantastic Mr. Fox",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 41352,
+      "title": "Inglourious Basterds",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 39350,
+      "title": "(500) Days of Summer",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 5
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 34055,
+      "title": "Alone",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 4
+      },
+      "similarityPercentage": 60
+    },
+    {
+      "letterboxdId": 51449,
+      "title": "Harry Potter and the Order of the Phoenix",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 4
+      },
+      "similarityPercentage": 60
+    },
+    {
+      "letterboxdId": 51147,
+      "title": "The Prestige",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 9
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 51712,
+      "title": "The Devil Wears Prada",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 51530,
+      "title": "The Da Vinci Code",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 4
+      },
+      "similarityPercentage": 50
+    },
+    {
+      "letterboxdId": 51400,
+      "title": "V for Vendetta",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 51450,
+      "title": "Harry Potter and the Goblet of Fire",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 4
+      },
+      "similarityPercentage": 70
+    },
+    {
+      "letterboxdId": 51365,
+      "title": "Mr. & Mrs. Smith",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 3
+      },
+      "similarityPercentage": 60
+    },
+    {
+      "letterboxdId": 51784,
+      "title": "Batman Begins",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 34661,
+      "title": "G.O.R.A.",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 51527,
+      "title": "The Terminal",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 3
+      },
+      "similarityPercentage": 50
+    },
+    {
+      "letterboxdId": 51451,
+      "title": "Harry Potter and the Prisoner of Azkaban",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 7
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 51343,
+      "title": "Shrek 2",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 2683,
+      "title": "Eternal Sunshine of the Spotless Mind",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 74999,
+      "title": "Where's Firuze?",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 51898,
+      "title": "Lost in Translation",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 51484,
+      "title": "Catch Me If You Can",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 51453,
+      "title": "Harry Potter and the Philosopher's Stone",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 51858,
+      "title": "Amélie",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 51568,
+      "title": "Fight Club",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 51717,
+      "title": "Eyes Wide Shut",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 49047,
+      "title": "10 Things I Hate About You",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 70
+    },
+    {
+      "letterboxdId": 51518,
+      "title": "The Matrix",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 27256,
+      "title": "The Truman Show",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 6
+      },
+      "similarityPercentage": 70
+    },
+    {
+      "letterboxdId": 50780,
+      "title": "The Devil's Advocate",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 7
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 50168,
+      "title": "The Game",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 51345,
+      "title": "Se7en",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 51949,
+      "title": "Léon: The Professional",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 4
+      },
+      "similarityPercentage": 60
+    },
+    {
+      "letterboxdId": 45602,
+      "title": "Chungking Express",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 51782,
+      "title": "The Silence of the Lambs",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 51846,
+      "title": "Dead Poets Society",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 51939,
+      "title": "Scarface",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 90
+    },
+    {
+      "letterboxdId": 50915,
+      "title": "Vivre Sa Vie",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 10
+      },
+      "similarityPercentage": 80
+    },
+    {
+      "letterboxdId": 51770,
+      "title": "Casablanca",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 8
+      },
+      "similarityPercentage": 100
+    },
+    {
+      "letterboxdId": 784328,
+      "title": "Oppenheimer",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 277064,
+      "title": "Barbie",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 867346,
+      "title": "Strange Way of Life",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 586723,
+      "title": "Glass Onion",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 543002,
+      "title": "Thor: Love and Thunder",
+      "ratings": {
+        "nanobiolog": 5,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 362977,
+      "title": "Spider-Man: Far from Home",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 226750,
+      "title": "Captain Marvel",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 337567,
+      "title": "Ocean's Eight",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 184061,
+      "title": "Incredibles 2",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 209382,
+      "title": "Thor: Ragnarok",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 242710,
+      "title": "Spider-Man: Homecoming",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 251940,
+      "title": "Despicable Me 3",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 184062,
+      "title": "Cars 3",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 225027,
+      "title": "Wonder Woman",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 209322,
+      "title": "Guardians of the Galaxy Vol. 2",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 305623,
+      "title": "Allied",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 209381,
+      "title": "Doctor Strange",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 316315,
+      "title": "Split",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 257426,
+      "title": "Arrival",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 225026,
+      "title": "Suicide Squad",
+      "ratings": {
+        "nanobiolog": 4,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 251773,
+      "title": "Jason Bourne",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 226866,
+      "title": "The 5th Wave",
+      "ratings": {
+        "nanobiolog": 5,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 211837,
+      "title": "Paper Towns",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 150541,
+      "title": "Minions",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 81605,
+      "title": "Avengers: Age of Ultron",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 101991,
+      "title": "The Hunger Games: Mockingjay – Part 1",
+      "ratings": {
+        "nanobiolog": 5,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 223172,
+      "title": "Coming Soon",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 190077,
+      "title": "The Theory of Everything",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 93676,
+      "title": "Guardians of the Galaxy",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 83215,
+      "title": "The Amazing Spider-Man 2",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 81909,
+      "title": "Captain America: The Winter Soldier",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 62822,
+      "title": "Thor: The Dark World",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 91952,
+      "title": "Jobs",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 62709,
+      "title": "Percy Jackson: Sea of Monsters",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 64392,
+      "title": "The Smurfs 2",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 57292,
+      "title": "World War Z",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 77748,
+      "title": "Despicable Me 2",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 285,
+      "title": "The Great Gatsby",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 52513,
+      "title": "Iron Man 3",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 120279,
+      "title": "CM101MMXI Fundamentals",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 74348,
+      "title": "Life of Pi",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 62912,
+      "title": "Hotel Transylvania",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 8395,
+      "title": "Ice Age: Continental Drift",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 50677,
+      "title": "The Amazing Spider-Man",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 36778,
+      "title": "The Avengers",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 59281,
+      "title": "The Hunger Games",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 23525,
+      "title": "The Smurfs",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 50809,
+      "title": "Captain America: The First Avenger",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 44580,
+      "title": "Harry Potter and the Deathly Hallows: Part 2",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 16560,
+      "title": "Cars 2",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46456,
+      "title": "Thor",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 6359,
+      "title": "Losers' Club",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 44581,
+      "title": "Harry Potter and the Deathly Hallows: Part 1",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 21801,
+      "title": "Love & Other Drugs",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 26476,
+      "title": "Megamind",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 37833,
+      "title": "Scott Pilgrim vs. the World",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 39067,
+      "title": "Despicable Me",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46455,
+      "title": "The Last Airbender",
+      "ratings": {
+        "nanobiolog": 5,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46458,
+      "title": "Toy Story 3",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46459,
+      "title": "Shrek Forever After",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46511,
+      "title": "Iron Man 2",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 16792,
+      "title": "Eyyvah Eyvah",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 25992,
+      "title": "Veda - Atatürk",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 30264,
+      "title": "Percy Jackson & the Olympians: The Lightning Thief",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 31823,
+      "title": "Yahşi Batı",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 38999,
+      "title": "3 Idiots",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 39304,
+      "title": "Avatar",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 43301,
+      "title": "2012",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51385,
+      "title": "Harry Potter and the Half-Blood Prince",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 47781,
+      "title": "Ice Age: Dawn of the Dinosaurs",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 36780,
+      "title": "A.R.O.G",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 44189,
+      "title": "Bolt",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46145,
+      "title": "Madagascar: Escape 2 Africa",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 45994,
+      "title": "WALL·E",
+      "ratings": {
+        "nanobiolog": 10,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 50825,
+      "title": "Iron Man",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 48298,
+      "title": "Alvin and the Chipmunks",
+      "ratings": {
+        "nanobiolog": 6,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 48296,
+      "title": "I Am Legend",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 50558,
+      "title": "Ratatouille",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51342,
+      "title": "Shrek the Third",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46779,
+      "title": "Happy Feet",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 60297,
+      "title": "Ice Age: The Meltdown",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51233,
+      "title": "Cars",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 31875,
+      "title": "Magic Carpet Ride",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51932,
+      "title": "Charlie and the Chocolate Factory",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51207,
+      "title": "Madagascar",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46806,
+      "title": "The Incredibles",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51510,
+      "title": "Downfall",
+      "ratings": {
+        "nanobiolog": 9,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 47508,
+      "title": "Garfield",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46551,
+      "title": "13 Going on 30",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 2705,
+      "title": "Finding Nemo",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51452,
+      "title": "Harry Potter and the Chamber of Secrets",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51670,
+      "title": "Ice Age",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 46753,
+      "title": "The Princess Diaries",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51344,
+      "title": "Shrek",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51289,
+      "title": "Toy Story 2",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51524,
+      "title": "Titanic",
+      "ratings": {
+        "nanobiolog": 7,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51290,
+      "title": "Toy Story",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 51778,
+      "title": "The Shawshank Redemption",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    },
+    {
+      "letterboxdId": 47677,
+      "title": "The Lion King",
+      "ratings": {
+        "nanobiolog": 8,
+        "zeynepaydinalp": 0
+      },
+      "similarityPercentage": 0
+    }
+  ]
+}
