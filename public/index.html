@@ -79,8 +79,15 @@
         #loading-text {
             text-align: center;
             margin-top: 10px;
-            display: none;
+            margin-bottom: 20px; /* Adding margin below the text */
             color: #333;
+            display: none; /* Initially hide the loading text */
+        }
+
+        /* Style for the sponsor button */
+        .sponsor-button {
+            display: none; /* Initially hide the sponsor button */
+            margin-top: 10px; /* Adjust margin as needed */
         }
     </style>
 </head>
@@ -98,16 +105,24 @@
         <input type="text" name="usernames[]" id="username2" required>
 
         <button id="submit-btn" type="submit">Go</button>
-        <div id="loading-text">This might take a while. Please wait while pulling movies from the database...</div>
+        
+        <!-- Embed Sponsor Button inside the loading-text division -->
+        <div id="loading-text">
+            This might take a while. Please wait while pulling movies from the database... <br>
+            If you've been waiting for a long time, it means I haven't paid for the server's premium plan. You can donate a few bucks to me via GitHub.
+            <iframe class="sponsor-button" src="https://github.com/sponsors/nanobiolog/button" title="Sponsor nanobiolog" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+        </div>
     </form>
 
     <script>
         const form = document.getElementById('form');
         const loadingText = document.getElementById('loading-text');
-
+        const sponsorButton = document.querySelector('.sponsor-button');
+        
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             loadingText.style.display = 'block';
+            sponsorButton.style.display = 'block';
             setTimeout(() => {
                 form.submit();
             }, 2000); // Simulating a delay of 2 seconds before submitting the form
