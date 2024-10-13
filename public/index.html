@@ -119,13 +119,45 @@
         const loadingText = document.getElementById('loading-text');
         const sponsorButton = document.querySelector('.sponsor-button');
         
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
             loadingText.style.display = 'block';
             sponsorButton.style.display = 'block';
-            setTimeout(() => {
-                form.submit();
-            }, 2000); // Simulating a delay of 2 seconds before submitting the form
+
+            const formData = new FormData(form);
+            const usernames = formData.getAll('usernames[]');
+
+            try {
+                const response = await fetch('/scrape', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ usernames }),
+                });
+
+                let responseData;
+                const contentType = response.headers.get("content-type");
+                if (contentType && contentType.indexOf("application/json") !== -1) {
+                    responseData = await response.json();
+                } else {
+                    responseData = await response.text();
+                }
+
+                if (response.ok) {
+                    window.location.href = '/commonMovies.html';
+                } else {
+                    console.error('Server responded with an error:', response.status, responseData);
+                    alert(`Error ${response.status}: ${typeof responseData === 'string' ? responseData : JSON.stringify(responseData)}`);
+                    loadingText.style.display = 'none';
+                    sponsorButton.style.display = 'none';
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred. Please check the console for more details.');
+                loadingText.style.display = 'none';
+                sponsorButton.style.display = 'none';
+            }
         });
     </script>
 </body>
