@@ -119,13 +119,38 @@
         const loadingText = document.getElementById('loading-text');
         const sponsorButton = document.querySelector('.sponsor-button');
         
-        form.addEventListener('submit', (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
             loadingText.style.display = 'block';
             sponsorButton.style.display = 'block';
-            setTimeout(() => {
-                form.submit();
-            }, 2000); // Simulating a delay of 2 seconds before submitting the form
+
+            try {
+                const formData = new FormData(form);
+                const response = await fetch('/scrape', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        usernames: Array.from(formData.getAll('usernames[]'))
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                const data = await response.json();
+                
+                // Store the data in sessionStorage
+                sessionStorage.setItem('movieData', JSON.stringify(data));
+                
+                // Redirect to commonMovies.html
+                window.location.href = '/commonMovies.html';
+            } catch (error) {
+                console.error('Error:', error);
+                loadingText.textContent = 'An error occurred. Please try again.';
+            }
         });
     </script>
 </body>

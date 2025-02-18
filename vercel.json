@@ -9,8 +9,11 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "app.mjs"
+        "dest": "/app.mjs"
       }
-    ]
+    ],
+    "env": {
+      "NODE_ENV": "production"
+    }
   }
   
