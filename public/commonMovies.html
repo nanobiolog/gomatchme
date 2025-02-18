@@ -24,12 +24,26 @@
             padding: 20px;
             background-color: #1a1d24;
             color: #ffffff;
+            position: relative;
+        }
+
+        .sponsor-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        .sponsor-button {
+            display: block;
+            border: 0;
+            border-radius: 6px;
         }
 
         h1 {
             color: #ffffff;
             text-align: center;
-            margin-bottom: 30px;
+            margin: 60px 0 30px;
         }
 
         .controls {
@@ -268,18 +282,79 @@
         }
 
         @media only screen and (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .sponsor-container {
+                position: relative;
+                top: 0;
+                left: 0;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            .sponsor-button {
+                display: inline-block;
+            }
+
+            h1 {
+                margin: 20px 0;
+                font-size: 24px;
+            }
+
             .controls {
                 flex-direction: column;
                 align-items: stretch;
+                gap: 15px;
+            }
+
+            .search-section {
+                width: 100%;
+            }
+
+            #filter-input {
+                width: 100%;
+                box-sizing: border-box;
             }
 
             .buttons-section {
-                justify-content: space-between;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
             }
 
             #sort-select,
             .action-button {
-                width: auto;
+                flex: 1;
+                min-width: 120px;
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            #movies-grid {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+                gap: 15px;
+            }
+
+            .movie-title {
+                font-size: 14px;
+            }
+
+            .movie-ratings,
+            .movie-similarity {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            #movies-grid {
+                grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+                gap: 10px;
             }
         }
 
@@ -314,6 +389,9 @@
 </head>
 
 <body>
+    <div class="sponsor-container">
+        <iframe class="sponsor-button" src="https://github.com/sponsors/nanobiolog/button" title="Sponsor nanobiolog" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
+    </div>
     <h1>Common Movies</h1>
 
     <div id="mean-similarity"></div>
