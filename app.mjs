@@ -290,29 +290,6 @@ app.get('/commonMovies.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'commonMovies.html'));
 });
 
-// Insert the following new route before the catch-all route
-app.get('/api/imdb-poster', async (req, res) => {
-  const { title, letterboxdId } = req.query;
-  if (!title) {
-    return res.status(400).json({ error: 'Missing title parameter' });
-  }
-
-  const omdbApiKey = process.env.OMDB_API_KEY || 'YOUR_OMDB_API_KEY';
-
-  try {
-    const response = await fetch(`http://www.omdbapi.com/?apikey=${omdbApiKey}&t=${encodeURIComponent(title)}`);
-    const data = await response.json();
-
-    if (data.Response === 'False') {
-      return res.status(404).json({ error: data.Error || 'Movie not found' });
-    }
-
-    return res.json({ poster: data.Poster });
-  } catch (err) {
-    return res.status(500).json({ error: err.message });
-  }
-});
-
 // Your existing catch-all route
 app.use('*', (req, res) => {
   console.log('Catch-all route hit:', req.method, req.originalUrl);

@@ -165,11 +165,78 @@
             font-weight: 500;
         }
 
-        .movie-poster {
+        .movie-poster-container {
+            position: relative;
             width: 100%;
             aspect-ratio: 2/3;
+            background-color: #2c3440;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .movie-poster {
+            width: 100%;
+            height: 100%;
             object-fit: cover;
             background-color: #1a1d24;
+        }
+
+        .movie-poster.hidden {
+            display: none !important;
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            opacity: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .fallback-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #2c3440;
+            border-radius: 8px;
+        }
+
+        .fallback-content.visible {
+            display: flex;
+            z-index: 1;
+        }
+
+        .fallback-content .view-on {
+            color: #40bcf4;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .fallback-content .fallback-title {
+            font-size: 24px;
+            line-height: 1.3;
+            font-weight: bold;
+            color: #ffffff;
+            max-width: 90%;
+            word-wrap: break-word;
+            margin-top: 20px;
+        }
+
+        .fallback-similarity {
+            color: #00c030;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 12px;
+            background: rgba(0, 192, 48, 0.1);
+            border-radius: 4px;
+            margin-top: 10px;
         }
 
         .movie-info {
@@ -217,11 +284,20 @@
         }
 
         /* Add these CSS rules after the .movie-poster rule */
-        .movie-poster-container {
-            position: relative;
-            width: 100%;
+        .year-overlay {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            z-index: 2;
         }
 
+        /* Remove the rating-overlay class */
         .rating-overlay {
             position: absolute;
             top: 10px;
@@ -232,6 +308,7 @@
             border-radius: 4px;
             font-size: 14px;
             font-weight: bold;
+            z-index: 2;
         }
     </style>
 </head>
@@ -288,7 +365,7 @@
             const exportBtn = document.createElement('button');
             exportBtn.id = 'export-btn';
             exportBtn.className = 'action-button export';
-            exportBtn.textContent = 'Export as XLSX';
+            exportBtn.textContent = 'Export as PDF';
             
             // Create try new button
             const tryNewBtn = document.createElement('button');
@@ -343,8 +420,15 @@
                 const shouldLoadPoster = loadedPosters < INITIAL_LOAD;
                 
                 // Calculate average rating
-                const ratings = Object.values(movie.ratings);
-                const avgRating = (ratings.reduce((sum, r) => sum + r, 0) / ratings.length).toFixed(1);
+                let ratingDisplay;
+                if (movie.letterboxdRating !== undefined) {
+                    const officialRating = parseFloat(movie.letterboxdRating);
+                    const convertedRating = (officialRating * 2).toFixed(1);
+                    ratingDisplay = `${officialRating} x2 = ${convertedRating} out of 10`;
+                } else {
+                    const ratings = Object.values(movie.ratings);
+                    ratingDisplay = (ratings.reduce((sum, r) => sum + r, 0) / ratings.length).toFixed(1);
+                }
                 
                 // Create Letterboxd URL
                 const letterboxdUrl = `https://letterboxd.com/film/${slugify(movie.title)}`;
@@ -356,14 +440,11 @@
                              data-poster="${getPosterUrl(movie.letterboxdId, movie.title)}"
                              alt="${movie.title}"
                              loading="lazy">
-                        <div class="rating-overlay">★ ${avgRating}</div>
+                        <div class="fallback-content">
+                            <div class="fallback-title">${movie.title}</div>
+                            <div class="view-on">View on Letterboxd →</div>
+                        </div>
                         <div class="movie-hover-info">
-                            ${movie.year ? `<div class="year">${movie.year}</div>` : ''}
-                            ${movie.imdbRating ? `
-                                <div class="imdb">
-                                    IMDb: ★ ${movie.imdbRating}
-                                </div>
-                            ` : ''}
                             <div class="view-on">View on Letterboxd →</div>
                         </div>
                     </div>
@@ -385,9 +466,12 @@
                 }
                 
                 const img = card.querySelector('img');
+                const fallbackContent = card.querySelector('.fallback-content');
+                
                 img.onerror = function() {
                     this.onerror = null;
-                    this.src = 'https://via.placeholder.com/200x300?text=No+Image';
+                    this.classList.add('hidden');
+                    fallbackContent.classList.add('visible');
                 };
                 
                 // Add click handler to open Letterboxd page
@@ -443,8 +527,8 @@
                         case 'similarity':
                             return b.similarityPercentage - a.similarityPercentage;
                         case 'rating':
-                            const avgRatingA = Object.values(a.ratings).reduce((sum, r) => sum + r, 0) / 2;
-                            const avgRatingB = Object.values(b.ratings).reduce((sum, r) => sum + r, 0) / 2;
+                            const avgRatingA = Object.values(a.ratings).reduce((sum, r) => sum + r, 0) / Object.values(a.ratings).length;
+                            const avgRatingB = Object.values(b.ratings).reduce((sum, r) => sum + r, 0) / Object.values(b.ratings).length;
                             return avgRatingB - avgRatingA;
                         default:
                             return 0;
@@ -464,41 +548,102 @@
             tryNewBtn.addEventListener('click', () => {
                 window.location.href = '/';
             });
-        });
 
-        document.getElementById('export-btn').addEventListener('click', () => {
-            const movieData = JSON.parse(sessionStorage.getItem('movieData'));
-            if (!movieData || !movieData.data || !movieData.data.commonMovies) {
-                console.error('No data available for export');
-                return;
-            }
+            // Add export button click handler
+            exportBtn.addEventListener('click', () => {
+                try {
+                    if (typeof jspdf === 'undefined') {
+                        console.error('jsPDF library not loaded');
+                        alert('Export library not loaded. Please try refreshing the page.');
+                        return;
+                    }
 
-            const commonMovies = movieData.data.commonMovies;
-            
-            // Create an array of objects with proper structure for XLSX conversion
-            const xlsData = commonMovies.map(movie => {
-                const xlsObj = {
-                    title: movie.title,
-                };
-                Object.entries(movie.ratings).forEach(([username, rating]) => {
-                    xlsObj[`${username}_rating`] = rating;
-                });
-                xlsObj.similarity = movie.similarityPercentage;
-                return xlsObj;
+                    const movieData = JSON.parse(sessionStorage.getItem('movieData'));
+                    if (!movieData || !movieData.data || !movieData.data.commonMovies) {
+                        console.error('No data available for export');
+                        alert('No data available for export');
+                        return;
+                    }
+
+                    const { jsPDF } = window.jspdf;
+                    const doc = new jsPDF();
+                    
+                    // Set font styles
+                    doc.setFont("helvetica", "bold");
+                    doc.setFontSize(20);
+                    
+                    // Add title and stats
+                    doc.text("Common Movies Report", 105, 20, { align: "center" });
+                    doc.setFontSize(12);
+                    doc.setFont("helvetica", "normal");
+                    doc.text(`Taste Similarity: ${movieData.data.meanSimilarityPercentage.toFixed(2)}%`, 105, 30, { align: "center" });
+                    doc.text(`Total Movies: ${movieData.data.commonMovies.length}`, 105, 37, { align: "center" });
+                    
+                    // Add movies table
+                    let yPos = 50;
+                    const pageHeight = doc.internal.pageSize.height;
+                    const margin = 20;
+                    const commonMovies = movieData.data.commonMovies;
+                    
+                    // Table headers
+                    doc.setFont("helvetica", "bold");
+                    doc.text("Title", margin, yPos);
+                    doc.text("Ratings", 140, yPos);
+                    doc.text("Similarity", 180, yPos);
+                    
+                    yPos += 7;
+                    doc.setFont("helvetica", "normal");
+                    doc.setFontSize(10);
+
+                    commonMovies.forEach((movie, index) => {
+                        // Check if we need a new page
+                        if (yPos > pageHeight - 20) {
+                            doc.addPage();
+                            yPos = 20;
+                        }
+
+                        // Movie title (with word wrap if needed)
+                        const titleLines = doc.splitTextToSize(movie.title, 95);
+                        doc.text(titleLines, margin, yPos);
+                        
+                        // Ratings
+                        const ratings = Object.entries(movie.ratings)
+                            .map(([username, rating]) => `${username}: ${rating}`)
+                            .join(', ');
+                        const ratingLines = doc.splitTextToSize(ratings, 35);
+                        doc.text(ratingLines, 140, yPos);
+                        
+                        // Similarity
+                        if (movie.similarityPercentage) {
+                            doc.text(`${movie.similarityPercentage.toFixed(1)}%`, 180, yPos);
+                        }
+                        
+                        // Calculate next position based on the maximum number of lines
+                        const maxLines = Math.max(
+                            titleLines.length,
+                            ratingLines.length
+                        );
+                        yPos += maxLines * 5 + 3;
+                    });
+                    
+                    // Add footer
+                    const pageCount = doc.internal.getNumberOfPages();
+                    for (let i = 1; i <= pageCount; i++) {
+                        doc.setPage(i);
+                        doc.setFontSize(10);
+                        doc.text(`Page ${i} of ${pageCount}`, 105, pageHeight - 10, { align: 'center' });
+                    }
+                    
+                    // Save the PDF
+                    doc.save('CommonMovies.pdf');
+                } catch (error) {
+                    console.error('Error exporting data:', error);
+                    alert('Error exporting data. Please try again.');
+                }
             });
-
-            // Create a worksheet
-            const ws = XLSX.utils.json_to_sheet(xlsData);
-
-            // Create a workbook
-            const wb = XLSX.utils.book_new();
-            XLSX.utils.book_append_sheet(wb, ws, "CommonMovies");
-
-            // Save the workbook as an XLS file
-            XLSX.writeFile(wb, 'CommonMovies.xlsx');
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </body>
 
 </html>
